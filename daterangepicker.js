@@ -6,10 +6,12 @@
 * @website: http://www.daterangepicker.com/
 */
 // Following the UMD template https://github.com/umdjs/umd/blob/master/templates/returnExportsGlobal.js
-var localeData = window.dayjs_plugin_localeData;
-var LocalizedFormat = window.dayjs_plugin_localizedFormat;
-var isoWeek = window.dayjs_plugin_isoWeek;
-var arraySupport = window.dayjs_plugin_arraySupport;
+import * as dayjs from 'dayjs';
+import * as localeData from 'dayjs/plugin/localeData';
+import * as LocalizedFormat from 'dayjs/plugin/localizedFormat';
+import * as isoWeek from 'dayjs/plugin/isoWeek';
+import * as arraySupport from 'dayjs/plugin/arraySupport';
+
 dayjs.extend(localeData);
 dayjs.extend(LocalizedFormat);
 dayjs.extend(isoWeek);
@@ -1571,7 +1573,7 @@ dayjs.extend(arraySupport)
 
     };
 
-    $.fn.daterangepicker = function(options, callback) {
+    jQuery.fn.daterangepicker = function(options, callback) {
         var implementOptions = $.extend(true, {}, $.fn.daterangepicker.defaultOptions, options);
         this.each(function() {
             var el = $(this);
