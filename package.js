@@ -9,7 +9,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.0.1');
 
-  api.use('momentjs:moment@2.22.1', ["client"]);
+  api.use('dayjs:dayjs@8.15.0', ["client"]);
   api.use('jquery@3.3.1', ["client"]);
 
   api.addFiles('daterangepicker.js', ["client"]);
