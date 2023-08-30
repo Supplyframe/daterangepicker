@@ -6,14 +6,6 @@
 * @website: http://www.daterangepicker.com/
 */
 // Following the UMD template https://github.com/umdjs/umd/blob/master/templates/returnExportsGlobal.js
-var localeData = window.dayjs_plugin_localeData;
-var LocalizedFormat = window.dayjs_plugin_localizedFormat;
-var isoWeek = window.dayjs_plugin_isoWeek;
-var arraySupport = window.dayjs_plugin_arraySupport;
-dayjs.extend(localeData);
-dayjs.extend(LocalizedFormat);
-dayjs.extend(isoWeek);
-dayjs.extend(arraySupport)
 
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
